@@ -1,0 +1,12 @@
+{
+  "name": "simple-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Test Harness",
+  "main": "index.js",
+  "author": "Alan Chandler <alan@chandlerfamily.org.uk",
+  "license": "MIT",
+  "dependencies": {
+    "url": "^0.11.0"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Browser Refresh Test</title>
+    <script>
+      function onUnload() {
+        fetch('/release', {
+            credentials: 'same-origin',
+            method: 'post',
+            headers: new Headers({
+              'content-type': 'application/json'
+            }),
+            body: '{}'
+          }).then(response => response.json())
+            .then(json => {
+              console.log('reply received');
+            });
+      }
+      window.addEventListener('beforeunload', onUnload);
+
+    </script>
+  </head>
+  <body>
+    <h1>Testing</h1>
+    <p>Refresh the browser to activate the test</p>
+  </body>
