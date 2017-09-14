@@ -3,7 +3,6 @@
   const path = require('path');
 
   const fs = require('fs');
-  const enableDestroy = require('server-destroy');
   const url = require('url');
 
   const map = {
