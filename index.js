@@ -61,7 +61,7 @@
           console.log('File not existing error triggered on response');
         }
       });
-      req.on('abort', () => {
+      req.on('aborted', () => {
         console.warn('request aborted');
       });
       res.on('close', () => {
